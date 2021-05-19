@@ -1,1 +1,42 @@
-@import url(./components/_main-features.scss);
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./components/main-features";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $bcg-white;
+  color: $main-lightgrey-text;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
