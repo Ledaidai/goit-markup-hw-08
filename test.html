@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/test.css">
+</head>
+<body>
+  <!-- Форма -->
+  
+  <!-- имя телефон мэил -->
+  <form class="form js-speaker-form" autocomplete="off">
+    <div class="form-field">
+      <label for="name">Имя</label>
+      <input type="text" name="name" id="name" placeholder="Иван Иванов" autofocus>
+    </div>
+  
+    <div class="form-field">
+      <label for="tel">Телефон</label>
+      <input type="tel" name="tel" id="tel" placeholder="+380981111111">
+    </div>
+  
+    <div class="form-field">
+      <label for="mail">Почта</label>
+      <input type="email" name="mail" id="mail" autocomplete="on">
+    </div>
+  
+    <!-- выбираем темы для доклада NAME одинаковый -->
+    <div role="group" class="group">
+      <h2 class="group-title">Тема доклада</h2>
+  
+      <ul class="topic-options">
+        <li>
+          <input type="checkbox" name="topic" value="html" id="html" checked>
+          <label for="html">HTML</label>
+        </li>
+  
+        <li>
+          <input type="checkbox" name="topic" value="css" id="css" checked>
+          <label for="css">CSS</label>
+        </li>
+        <li>
+          <input type="checkbox" name="topic" value="js" id="js">
+          <label for="js">JS</label>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- выбираем уровень разработчика (один из многого) -->
+    <div role="group" class="group">
+      <h2 class="group-title">Уровень экспертизы</h2>
+  
+      <ul class="experience-options">
+        <li>
+          <input type="radio" name="experience" value="junior" id="junior" checked>
+          <label for="junior">Junior</label>
+        </li>
+  
+        <li>
+          <input type="radio" name="experience" value="middle" id="middle">
+          <label for="middle">Middle</label>
+        </li>
+  
+        <li>
+          <input type="radio" name="experience" value="senior" id="senior">
+          <label for="senior">Senior</label>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- выбираем время доклада -->
+    <div class="form-field">
+      <label for="date">Дата доклада</label>
+      <input type="datetime-local" name="date" id="date" min="2021-05-13T10:00" max="2021-05-18T18:00" class="date" />
+    </div>
+  
+    <!-- загружаем презентацию -->
+    <div class="form-field">
+      <label for="pdf">Загрузите копию доклада в pdf</label>
+      <input type="file" name="pdf" id="pdf">
+    </div>
+  
+    <!-- оставить комментарий -->
+    <div class="form-field">
+      <label for="comment">Оставьте комментарий</label>
+      <textarea name="comment" id="comment" rows="10" placeholder="Уточните детали" class="comment"></textarea>
+    </div>
+  
+    <!-- подтверждаем политику конфкеденциальности -->
+    <div class="form-field">
+      <input type="checkbox" name="policy" id="policy">
+      <label for="policy">Соглашаюсь на все</label>
+    </div>
+  
+  
+    <button type="submit">Оставить заявку</button>
+  </form>
+  
+  <!-- Инпут стоит в лейбле. Не нужны айди -->
+  <!-- <form class="js-speaker-form">
+      <label>
+        Имя
+        <input type="text" name="name">
+      </label>
+    </form> -->
+
+    <form class="form">
+      <div class="form-field">
+        <input type="text" class="form-input" name="name" id="name" placeholder=" ">
+        <label for="name" class="form-label">Имя</label>
+        <span class="form-icon"></span>
+      </div>
+    
+      <!-- <label class="form-field">
+            <input type="text" class="form-input" name="name" id="name" placeholder=" ">
+             Имя
+          </label> -->
+    
+      <div class="form-field">
+        <input type="email" class="form-input" name="mail" id="mail" placeholder=" ">
+        <label for="mail" class="form-label">Почта</label>
+        <span class="form-icon"></span>
+      </div>
+    
+      <button type="submit">Оставить заявку</button>
+    </form>
+</body>
+</html>
