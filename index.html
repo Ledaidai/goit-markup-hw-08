@@ -18,8 +18,23 @@
     <div class="header-container">
       <nav class="nav">
         <a href="./index.html" class="link logo"><span class="logo-first">Web</span>Studio</a>
-      
-        <ul class="list site-nav">
+        <button 
+          type="button" 
+          class="menu-button is-open" 
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+          >
+          <svg 
+            width="40" 
+            height="40"
+            aria-label="Переключатель мобильного меню"
+            >
+            <use class="icon-cross" href="./images/sprite.svg#icon-header-phone"></use>
+            <use class="icon-menu" href="./images/sprite.svg#icon-header-mail"></use>
+          </svg>
+        </button>
+        <ul class="list site-nav" id="menu-container" data-menu>
           <li class="site-nav__item current"><a href="./index.html" class="link site-nav__link current">Студия</a></li>
           <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
           <li class="site-nav__item"><a href="" class="link site-nav__link">Контакты</a></li>
@@ -64,7 +79,7 @@
       <div class="container">
         <h2 class="section-title hidden__title">Преимущества</h2>
         
-        <ul class="list feature-list">
+        <ul class="list feature__list">
           <li class="feature__item">
             <div class="feature__card">
               <svg class="feature__svg">
@@ -113,7 +128,7 @@
     </section>
   
   <!-- Чем занимаемся -->
-    <section class="section">
+    <section class="section hidden-section">
       <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         
@@ -459,6 +474,7 @@
     </div>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
   <script>
     (() => {
       document
