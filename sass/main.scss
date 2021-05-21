@@ -4,6 +4,7 @@
 @import "./components/page-header";
 @import "./components/main-features";
 @import "./components/main-works";
+@import "./components/modals";
 
 html {
   box-sizing: border-box;
@@ -20,6 +21,10 @@ body {
   color: $main-lightgrey-text;
   font-family: Roboto, sans-serif;
   margin: 0;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .list {

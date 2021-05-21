@@ -8,7 +8,10 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
   & .icon-cross {
     display: none;
@@ -23,14 +26,21 @@
   }
 }
 
-.site-nav {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+.menu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: violet;
 
-  &.is-open {
-    display: block;
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
