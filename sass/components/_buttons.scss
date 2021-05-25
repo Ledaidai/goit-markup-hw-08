@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 140px;
+
+  &.primary {
+    background-color: $accent-color;
+    color: $white-text;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+  }
+
+  &.secondary {
+    background-color: $bcg-grey;
+    color: $main-grey-text;
+    padding: 6px 22px;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+  }
+
+  &.secondary:hover {
+    background-color: $accent-color;
+    color: $white-text;
+  }
+}

@@ -1,5 +1,29 @@
 .header .nav {
   position: relative;
+  height: 60px;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: $main-black-text;
+  font-family: Raleway, sans-serif;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  &:hover {
+    color: $accent-color;
+  }
+  &-first {
+    color: $accent-color;
+  }
 }
 
 .menu-button {
@@ -23,6 +47,10 @@
 
   &.is-open .icon-menu {
     display: none;
+  }
+
+  .header .nav {
+    height: 80px;
   }
 }
 
