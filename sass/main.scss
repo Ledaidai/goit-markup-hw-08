@@ -6,6 +6,7 @@
 @import "./components/buttons";
 @import "./components/main-features";
 @import "./components/main-works";
+@import "./components/main-team";
 @import "./components/modals";
 
 html {
@@ -49,4 +50,18 @@ p {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.section-title {
+  color: $main-grey-text;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+  }
 }

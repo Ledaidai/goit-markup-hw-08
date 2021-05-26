@@ -51,3 +51,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.feature__title {
+  color: $main-grey-text;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feature__descr {
+  color: $main-lightgrey-text;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+}

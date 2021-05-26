@@ -360,6 +360,11 @@ summary {
   height: 80px;
 }
 
+.icons-svg:hover,
+.icons-svg:focus {
+  fill: #2196f3;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -388,6 +393,7 @@ summary {
   background-color: #c4c4c4;
   text-align: center;
   height: 400px;
+  margin-bottom: 60px;
 }
 
 .hero__content {
@@ -516,10 +522,32 @@ summary {
   margin-right: auto;
 }
 
+.feature__title {
+  color: #212121;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feature__descr {
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
 @media screen and (max-width: 1199px) {
   .hidden-section {
     display: none;
   }
+}
+
+.team {
+  background-color: #f5f4fa;
 }
 
 .backdrop {
@@ -608,5 +636,21 @@ p {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.section-title {
+  color: #212121;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
