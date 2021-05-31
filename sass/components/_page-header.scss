@@ -66,7 +66,10 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: violet;
+    height: 100vh;
+    background-color: $bcg-white;
+    z-index: 100;
+    padding-left: 40px;
 
     &.is-open {
       display: block;
@@ -76,4 +79,60 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
+}
+
+.site-nav {
+  margin-bottom: 150px;
+}
+
+.site-nav__link {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $main-grey-text;
+  margin-bottom: 32px;
+
+  &.current {
+    color: $accent-color;
+  }
+}
+
+.header-icon {
+  display: none;
+}
+
+.header-contacts__phone {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  margin-bottom: 32px;
+}
+
+.header-contacts__mail {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: $main-lightgrey-text;
+  margin-bottom: 64px;
+}
+
+.header-social {
+  display: flex;
+}
+.header-social__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  margin-right: 20px;
 }
