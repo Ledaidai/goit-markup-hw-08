@@ -450,8 +450,9 @@ summary {
 }
 
 .hero {
+  background-image: url("/images/hero.jpeg");
+  background-size: cover;
   position: relative;
-  background-image: url(../images/hero.jpeg);
   background-color: #c4c4c4;
   text-align: center;
   height: 400px;
@@ -479,12 +480,17 @@ summary {
   text-transform: uppercase;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/hero-2x.jpeg");
+  }
+}
+
 .button {
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
   text-align: center;
-  min-width: 140px;
 }
 
 .button.primary {
@@ -509,9 +515,10 @@ summary {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  margin-bottom: 15px;
 }
 
-.button.secondary:hover {
+.button.secondary:hover, .button.secondary:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -721,34 +728,29 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 626px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.set-button .item {
+.set-button__item {
   margin-right: 8px;
 }
 
-.set-button .item:last-child {
-  margin-right: 0;
+.portfolio__item {
+  margin-bottom: 30px;
 }
 
-.portfolio-item > .link {
-  display: inline-block;
-}
-
-.portfolio-item img {
+.portfolio__img {
   display: block;
 }
 
 .portfolio-content {
   border: 1px solid #eee;
   padding-top: 20px;
+  padding-left: 24px;
 }
 
-.portfolio-item .title {
+.portfolio-content__title {
   color: #212121;
   font-weight: bold;
   font-size: 18px;
@@ -757,14 +759,15 @@ summary {
   margin-bottom: 4px;
 }
 
-.portfolio-item .desc {
+.portfolio-content__descr {
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 
-.portfolio-thumb:hover .thumb-text {
+.portfolio-thumb:hover .portfolio__thumb-text {
   opacity: 1;
 }
 
@@ -772,12 +775,12 @@ summary {
   opacity: 1;
 }
 
-.portfolio-thumb {
+.portfolio__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.overlay {
+.portfolio__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -797,7 +800,7 @@ summary {
           transform: translateY(0);
 }
 
-.thumb-text {
+.portfolio__thumb-text {
   position: absolute;
   top: 0;
   font-size: 18px;
@@ -996,6 +999,12 @@ body {
 
 body.modal-open {
   overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {

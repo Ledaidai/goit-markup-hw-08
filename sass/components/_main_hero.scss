@@ -1,6 +1,7 @@
 .hero {
+  background-image: url("/images/hero.jpeg");
+  background-size: cover;
   position: relative;
-  background-image: url(../images/hero.jpeg);
   background-color: #c4c4c4;
   text-align: center;
   height: 400px;
@@ -24,5 +25,14 @@
     line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/hero-2x.jpeg");
   }
 }
