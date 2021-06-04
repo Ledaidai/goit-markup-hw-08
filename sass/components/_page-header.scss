@@ -130,9 +130,14 @@
 }
 .header-social__item {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
   margin-right: 20px;
+}
+
+.contacts-bottom {
+  position: absolute;
+  bottom: 48px;
 }
