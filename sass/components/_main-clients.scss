@@ -18,6 +18,10 @@
   width: calc((100% - 4 * 15px) / 2);
   margin: 15px;
 
+  @media screen and (min-width: 1200px) {
+    max-width: 170px;
+  }
+
   &:hover,
   &:focus {
     border: 2px solid $accent-color;

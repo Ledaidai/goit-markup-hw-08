@@ -12,7 +12,6 @@
 .logo {
   color: $main-black-text;
   font-family: Raleway, sans-serif;
-
   font-weight: bold;
   font-size: 24px;
   line-height: 1.17;
@@ -26,32 +25,8 @@
   }
 }
 
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
-  & .icon-cross {
-    display: none;
-  }
-
-  &.is-open .icon-cross {
-    display: block;
-  }
-
-  &.is-open .icon-menu {
-    display: none;
-  }
-
-  .header .nav {
-    height: 80px;
-  }
+.header .nav {
+  height: 80px;
 }
 
 .icons-svg:hover,
@@ -78,6 +53,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row;
   }
 }
 
@@ -125,19 +101,54 @@
   margin-bottom: 64px;
 }
 
+// СОЦСЕТИ И ПЕРЕКЛЮЧАТЕЛЬ В МОБИЛЬНОЙ ВЕРСИИ
+
 .header-social {
-  display: flex;
-}
-.header-social__item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-  margin-right: 20px;
+  display: none;
 }
 
-.contacts-bottom {
-  position: absolute;
-  bottom: 48px;
+.menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header-social {
+    display: flex;
+  }
+
+  .header-social__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    margin-right: 20px;
+  }
+
+  .contacts-bottom {
+    position: absolute;
+    bottom: 48px;
+  }
+
+  // ПЕРЕКЛЮЧАТЕЛЬ
+
+  .menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    & .icon-cross {
+      display: none;
+    }
+
+    &.is-open .icon-cross {
+      display: block;
+    }
+
+    &.is-open .icon-menu {
+      display: none;
+    }
+  }
 }
