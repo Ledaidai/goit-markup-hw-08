@@ -7,6 +7,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -48,6 +49,8 @@
 
     &.is-open {
       display: block;
+      // height: auto;
+      // // z-index: 0;
     }
   }
 
@@ -59,6 +62,18 @@
 
 .site-nav {
   margin-bottom: 150px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: 0;
+  }
+}
+
+.site-nav {
+  &__item + &__item {
+    @media screen and (min-width: 768px) {
+      margin-left: 50px;
+    }
+  }
 }
 
 .site-nav__link {
@@ -73,10 +88,81 @@
   &.current {
     color: $accent-color;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $main-grey-text;
+    font-size: 14px;
+    line-height: 1.14;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .header-icon {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    fill: $main-lightgrey-text;
+  }
+}
+
+.header-icon__phone {
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.header-icon__mail {
+  @media screen and (min-width: 768px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.header-contacts {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+
+    & .link,
+    & .link:visited {
+      color: $main-lightgrey-text;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    & .link:hover,
+    & .link:focus {
+      color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.header-contacts__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    &:hover .header-icon,
+    &:focus .header-icon {
+      fill: $accent-color;
+    }
+  }
 }
 
 .header-contacts__phone {
@@ -88,6 +174,11 @@
   letter-spacing: 0.02em;
   color: $accent-color;
   margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
 }
 
 .header-contacts__mail {
@@ -99,6 +190,11 @@
   letter-spacing: 0.02em;
   color: $main-lightgrey-text;
   margin-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
 }
 
 // СОЦСЕТИ И ПЕРЕКЛЮЧАТЕЛЬ В МОБИЛЬНОЙ ВЕРСИИ
@@ -150,5 +246,18 @@
     &.is-open .icon-menu {
       display: none;
     }
+  }
+}
+
+.header-social {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.contacts-bottom {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-left: 45px;
   }
 }

@@ -269,60 +269,65 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-container">
-      <div>
-        <a href="./index.html" class="link footer-logo">
-          <span class="logo-first">Web</span><span class="logo-second">Studio</span>
-        </a>
-        <address>
-          <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
-          <p><a href="mailto:info@example.com" class="footer__contacts link footer__email">info@example.com</a> </p>
-          <p><a href="tel:+38 099 111 11 11" class="footer__contacts link">+38 099 111 11 11</a></p>
-        </address>
+      <div class="tablet-container">
+        <div class="adress-block">
+          <a href="./index.html" class="link footer-logo">
+            <span class="logo-first">Web</span><span class="logo-second">Studio</span>
+          </a>
+          <address>
+            <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
+            <p><a href="mailto:info@example.com" class="footer__contacts link footer__email">info@example.com</a> </p>
+            <p><a href="tel:+38 099 111 11 11" class="footer__contacts link">+38 099 111 11 11</a></p>
+          </address>
+        </div>
+  
+        <div class="footer-container__social">
+          <h3 class="social-title">Присоединяйтесь</h3>
+          <ul class="list footer-social">
+            <li class="footer-item">
+              <a href="">
+                <svg class="footer-svg">
+                  <use href="./images/sprite.svg#icon-footer-insta"></use>
+                </svg>
+              </a>
+            </li>
+  
+            <li class="footer-item">
+              <a href="">
+                <svg class="footer-svg">
+                  <use href="./images/sprite.svg#icon-footer-twitter"></use>
+                </svg>
+              </a>
+            </li>
+  
+            <li class="footer-item">
+              <a href="">
+                <svg class="footer-svg">
+                  <use href="./images/sprite.svg#icon-footer-fb"></use>
+                </svg>
+              </a>
+            </li>
+  
+            <li class="footer-item">
+              <a href="">
+                <svg class="footer-svg">
+                  <use href="./images/sprite.svg#icon-footer-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-  
-      <div class="footer-container__social">
-        <h3 class="social-title">Присоединяйтесь</h3>
-        <ul class="list footer-social">
-          <li class="footer-item">
-            <a href="">
-              <svg class="footer-svg">
-                <use href="./images/sprite.svg#icon-footer-insta"></use>
-              </svg>
-            </a>
-          </li>
-  
-          <li class="footer-item">
-            <a href="">
-              <svg class="footer-svg">
-                <use href="./images/sprite.svg#icon-footer-twitter"></use>
-              </svg>
-            </a>
-          </li>
-  
-          <li class="footer-item">
-            <a href="">
-              <svg class="footer-svg">
-                <use href="./images/sprite.svg#icon-footer-fb"></use>
-              </svg>
-            </a>
-          </li>
-  
-          <li class="footer-item">
-            <a href="">
-              <svg class="footer-svg">
-                <use href="./images/sprite.svg#icon-footer-in"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-  
       <div class="form-container">
         <label for="mail" class="form-title">Подпишитесь на рассылку</label>
-        <div>
-          <input type="email" name="mail" id="mail" placeholder="E-mail" autocomplete="on" class="form-input">
+        <div class="footer-form">
+          <div>
+            <input type="email" name="mail" id="mail" placeholder="E-mail" autocomplete="on" class="form-input">
+          </div>
   
-          <button class="button primary">Подписаться</button>
+          <div>
+            <button class="button primary button-footer">Подписаться</button>
+          </div>
         </div>
   
       </div>
