@@ -61,7 +61,7 @@
 }
 
 .site-nav {
-  margin-bottom: 150px;
+  // margin-bottom: 150px;
   @media screen and (min-width: 768px) {
     display: flex;
     margin: 0;
@@ -223,7 +223,7 @@
 
   .contacts-bottom {
     position: absolute;
-    bottom: 48px;
+    bottom: 150px;
   }
 
   // ПЕРЕКЛЮЧАТЕЛЬ

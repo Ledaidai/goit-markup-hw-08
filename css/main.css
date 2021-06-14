@@ -369,10 +369,6 @@ summary {
   }
 }
 
-.site-nav {
-  margin-bottom: 150px;
-}
-
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -558,7 +554,7 @@ summary {
   }
   .contacts-bottom {
     position: absolute;
-    bottom: 48px;
+    bottom: 150px;
   }
   .menu-button {
     display: -webkit-inline-box;
@@ -1367,6 +1363,20 @@ summary {
   width: calc(100% - 30px);
   padding: 40px;
   background-color: #ffffff;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    max-width: 528px;
+    width: 100%;
+  }
 }
 
 .modal-close {
